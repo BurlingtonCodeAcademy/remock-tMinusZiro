@@ -83,10 +83,20 @@ figcaption {
 }
 /*button content*/
 #tell-me-more {
-  justify-content: center;
-  background-color: crimson;
-  width: 16.25vw;
-  height: 30px;
+  border: none;
+  padding: 0.8rem 2rem;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 5%;
+  text-decoration: none;
+  background: red;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+  width: 14vw;
 }
 /*-------Home Color Bar------------*/
 
@@ -94,7 +104,6 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: salmon;
   text-align: center;
   height: 150px;
@@ -105,16 +114,15 @@ figcaption {
 #home-articles {
   display: flex;
   align-items: center;
-
   width: 65vw;
   margin-left: 17vw;
   margin-top: 60px;
   padding-bottom: 65vh;
+  text-align: justify;
 }
 
 #home-col1 {
   margin-bottom: auto;
-
   width: 75%;
   padding-right: 10px;
 }
@@ -514,3 +522,32 @@ li {
 #footer-list2 li:nth-child(1) {
   color: aqua;
 } */
+
+/*--------------------------NEW PAGE: BLOG POST PAGE---------------------------*/
+
+#post-only-main {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 17.45vw;
+  width: 65vw;
+}
+
+#post-only-feature-img > img {
+  width: 65vw;
+}
+
+#post-only-blog-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 17.45vw;
+  width: 65vw;
+  border: 1px solid purple;
+  padding-bottom: 65vh;
+  text-align: justify;
+}
+
+.para-title {
+  color: red;
+}
