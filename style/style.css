@@ -121,7 +121,7 @@ figcaption {
   text-align: justify;
 }
 
-#home-col1 {
+.home-col1 {
   margin-bottom: auto;
   width: 75%;
   padding-right: 10px;
@@ -198,7 +198,7 @@ figcaption {
 }
 
 /*-----Home Aside: Column Two---------*/
-#home-col2 {
+.home-col2 {
   width: 25%;
   margin-bottom: auto;
 }
@@ -556,4 +556,15 @@ li {
 
 .continue-reading-page-article {
   border-bottom: none;
+}
+
+/*----------------------LEARN MORE PAGE------------------------------*/
+
+.learn-more-col1 {
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.learn-more-col2 {
+  padding-right: 0;
 }
