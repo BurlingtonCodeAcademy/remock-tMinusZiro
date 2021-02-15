@@ -324,6 +324,8 @@ footer {
   grid-template-rows: repeat(3, minmax(min(10rem, 100%), auto));
 }
 
+/*FOOTER FORM*/
+
 #name {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -358,6 +360,7 @@ footer {
   padding-left: 10px;
 }
 
+/* Send Message button for footer form*/
 .send-message {
   border: none;
   padding: 0.8rem 2rem;
@@ -388,6 +391,8 @@ footer {
   text-align: start;
   border: 1px solid black;
 }
+
+/*Social Media List with SVG icons*/
 
 #footer-list1 {
   display: inline-block;
@@ -526,7 +531,6 @@ li {
 /*--------------------------NEW PAGE: BLOG POST PAGE---------------------------*/
 
 #post-only-main {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -543,7 +547,6 @@ li {
   flex-direction: column;
   margin-left: 17.45vw;
   width: 65vw;
-  border: 1px solid purple;
   padding-bottom: 65vh;
   text-align: justify;
 }
@@ -561,7 +564,7 @@ li {
 /*----------------------LEARN MORE PAGE------------------------------*/
 
 .learn-more-col1 {
-  padding-right: 15px;
+  padding-right: 30px;
   padding-left: 10px;
 }
 
