@@ -30,7 +30,7 @@ a:hover {
 }
 
 button:hover {
-  background-color: #49502b;
+  background-color: #87915b;
 }
 
 /*-------------Header---------------*/
@@ -62,46 +62,52 @@ button:hover {
 
 /*----------SECTION: HOME FEATURE---------------*/
 
-/* #home-feature > h3 {
-  align-self: center;
-  border: 1px solid black;
-} */
-
 #home-feature-h3-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
-/* complete image wrapper*/
+/* flex container*/
 #img-container-home-one {
   display: flex;
-  justify-content: space-between;
-
-  width: 65vw;
-  margin: auto;
+  margin: auto; /*pushes the flex container to the center*/
+  max-width: 65vw;
+  /* min-width: 0; supposed to fix horizontal-overflow*/
 }
 
-.div-spacer {
-  width: 50px;
-}
+/*flex item container*/
+#img-container-home-one figure {
+  /*If the image is wrapped in div the image fills the flex container equally to the brim with the current specs, but when wrapped in a figure the images become smaller and spaced out*/
 
-/*figure container with image and figcaption inside*/
-.feature-image {
-  margin: auto;
+  flex: auto; /*helps size images to grow within the flex container*/
+  width: 200px;
+  margin: 0;
+}
+/*flex item 1*/
+#img-container-home-one figure:nth-child(1) {
+  /*this helps provide space between the images otherwise when I had them fill the container they would not space apart appropriately*/
+  margin-right: 20px;
+}
+/*flex item 3*/
+#img-container-home-one figure:nth-child(3) {
+  margin-left: 20px;
 }
 
 /*actual image*/
-.feature-image > img {
-  max-width: 369px;
-  max-height: 207px;
+#img-container-home-one figure img {
+  border: 3px solid #6d1f09;
+  width: 100%; /*This helped draw the images within the container and avoid overflow with images to large for page*/
+  height: 100%; /*This resized all my images to the same height. Without the images are misshaped*/
+  box-shadow: 10px 5px 5px rgba(70, 69, 69, 0.623);
 }
 
-figcaption {
-  margin-top: 20px;
+/*Image Subtext*/
+#img-container-home-one figure figcaption {
   text-align: center;
 }
 
+/*Button container*/
 .button-wrapper {
   display: flex;
   justify-content: center;
@@ -114,9 +120,9 @@ figcaption {
   margin: 0;
   margin-top: 15px;
   margin-bottom: 30px;
-  border-radius: 5%;
+  border-radius: 10px;
   text-decoration: none;
-  background: #49502bdc;
+  background: #49502b;
   color: white;
   font-family: sans-serif;
   font-size: 0.9rem;
@@ -126,7 +132,7 @@ figcaption {
 }
 
 #tell-me-more:hover {
-  background-color: #49502b;
+  background-color: #87915b;
 }
 
 /*-------Home Color Bar------------*/
@@ -159,7 +165,7 @@ figcaption {
 .home-col1 {
   margin-bottom: auto;
   width: 75%;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .home-para-intro {
@@ -174,13 +180,13 @@ figcaption {
 /*Home Article Figure with image*/
 .home-article-img-wrapper {
   display: flex;
-
+  margin-top: 40px;
   margin: auto;
 }
 
-/*First Home Article Image*/
-.home-article-one > .home-article-img-wrapper {
-  margin-top: 40px;
+.home-article-img-wrapper > img {
+  border-radius: 5px;
+  border: 2px groove #3c2e27;
 }
 
 /*Second Home Article Image*/
@@ -190,7 +196,7 @@ figcaption {
 
 /*home article image*/
 .home-article-img-wrapper > img {
-  height: 100%;
+  height: 37vh;
   width: 100%;
 }
 
@@ -209,9 +215,9 @@ figcaption {
   margin: 0;
   margin-top: 25px;
   margin-bottom: 30px;
-  border-radius: 5%;
+  border-radius: 10px;
   text-decoration: none;
-  background: #49502bdc;
+  background: #49502b;
   color: white;
   font-family: sans-serif;
   font-size: 0.9rem;
@@ -312,9 +318,9 @@ figcaption {
   margin: 0;
   margin-top: 15px;
   margin-bottom: 30px;
-  border-radius: 5%;
+  border-radius: 10px;
   text-decoration: none;
-  background: #49502bdc;
+  background: #49502b;
   color: white;
   font-family: sans-serif;
   font-size: 0.9rem;
@@ -401,9 +407,9 @@ footer {
   max-width: 75%;
   margin: 0;
   margin-bottom: 30px;
-  border-radius: 5%;
+  border-radius: 10px;
   text-decoration: none;
-  background: #49502bdc;
+  background: #49502b;
   color: white;
   font-family: sans-serif;
   font-size: 0.9rem;
@@ -547,6 +553,9 @@ li {
 
 #post-only-feature-img > img {
   width: 65vw;
+  height: 50vh;
+  border-radius: 5px;
+  border: 2px groove #3c2e27;
 }
 
 #post-only-blog-text-wrapper {
@@ -562,6 +571,9 @@ li {
 
 .continue-reading-page-article {
   border-bottom: none;
+}
+.cont-read-img {
+  height: 38vh;
 }
 
 /*----------------------LEARN MORE PAGE------------------------------*/

@@ -16,13 +16,15 @@
         <h5 class="header-subtitle">Salted Meat and an Even Saltier Man</h5>
         <div id="home-divider"></div>
       </header>
+      <!-- main tag contains all the elements on the page besides the header -->
       <main id="main">
+        <!-- Section tag has three images, text, and a button - covers top half of page between header and color bar -->
         <section id="home-feature">
           <div id="home-feature-h3-wrapper">
             <h3>Can You Tell The Difference</h3>
           </div>
           <div id="img-container-home-one">
-            <figure class="feature-image">
+            <figure>
               <img
                 src="/images/young-sean-connery.jpg"
                 alt="Young Sean Connery"
@@ -30,8 +32,7 @@
               />
               <figcaption>Young Sean Connery</figcaption>
             </figure>
-            <div class="div-spacer"></div>
-            <figure class="feature-image">
+            <figure>
               <img
                 src="/images/old-sean-connery.jpg"
                 alt="Old Sean Connery"
@@ -39,18 +40,21 @@
               />
               <figcaption>Old Sean Connery</figcaption>
             </figure>
-            <div class="div-spacer"></div>
-            <figure class="feature-image">
+            <figure>
               <img
-                src="/images/charcuterie-platter.jpg"
+                id="fancy-charcuterie"
+                src="/images/fancy-charcuterie-board-4.jpg"
                 alt="Charcuterie Board"
                 title="Charcuterie Board"
               />
               <figcaption>Charcuterie</figcaption>
             </figure>
           </div>
+
           <div class="button-wrapper">
-            <button id="tell-me-more">Tell Me More</button>
+            <a href="/blog-post.html"
+              ><button id="tell-me-more">Tell Me More</button></a
+            >
           </div>
         </section>
         <div id="home-color-bar">
@@ -64,10 +68,10 @@
                 Of Course Not...
               </h3>
               <figure class="home-article-img-wrapper">
-                <img src="/images/vegan-ipsum.jpg" alt="" />
+                <img src="/images/fancy-charcuterie-board-2.jpg" alt="" />
               </figure>
               <a href="/blog-post.html"
-                ><h4 class="home-para-intro">Totally...</h4></a
+                ><h4 class="home-para-intro">That would be silly...</h4></a
               >
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -94,7 +98,7 @@
                 ><h3 class="home-blog-intro">Awesome Demo Photo</h3></a
               >
               <figure class="home-article-img-wrapper">
-                <img src="/images/vegan-ipsum.jpg" alt="" />
+                <img src="/images/mustache-connery.jpg" alt="" />
               </figure>
               <p id="home-article-para-spacer">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
