@@ -63,10 +63,12 @@
         <section id="home-articles">
           <div class="home-col1">
             <article id="home-article-one">
-              <h3 class="image-intro">
-                Is Sean Connery a Charcuterie Board?<br />
-                Of Course Not...
-              </h3>
+              <a href="/blog-post.html"
+                ><h3 class="image-intro">
+                  Is Sean Connery a Charcuterie Board?<br />
+                  Of Course Not...
+                </h3></a
+              >
               <figure class="home-article-img-wrapper">
                 <img src="/images/fancy-charcuterie-board-2.jpg" alt="" />
               </figure>
@@ -236,22 +238,25 @@
                 type="text"
                 placeholder="Name"
                 id="name"
+                class="form-input"
                 name="user_name"
               />
               <input
                 type="email"
                 placeholder="Email"
                 id="mail"
+                class="form-input"
                 name="user_email"
               />
               <textarea
                 id="msg"
+                class="form-input"
                 placeholder="Message"
                 name="user_message"
                 cols="40"
                 rows="10"
               ></textarea>
-              <button class="send-message">Send Message</button>
+              <button class="send-message" type="submit">Send Message</button>
             </form>
             <div class="footer-paragraph footer-col2">
               <p>
@@ -284,6 +289,6 @@
         </footer>
       </main>
     </div>
-    <script></script>
+    <script src="/script/script.js"></script>
   </body>
 </html>

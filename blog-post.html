@@ -13,19 +13,28 @@
     <div id="page-container">
       <header id="header">
         <a href="/index.html"> <h1 class="header-title">Sean Cuterie</h1></a>
-        <h5 class="header-subtitle">A Page With Just A Blog Post Content</h5>
+        <h5 class="header-subtitle">Smoked Meat with an Even Smokier Man</h5>
         <div id="home-divider"></div>
       </header>
 
       <main id="main">
         <section id="post-only-main">
-          <h2>Take A Look At This Amazing Home Page</h2>
+          <h2>Take A Look At This Amazing Charcuterie I mean man</h2>
           <figure id="post-only-feature-img">
             <img src="/images/cigarette-connery.jpg" alt="placeholder" />
           </figure>
         </section>
         <article id="post-only-blog-text-wrapper">
-          <h3 class="para-title">And Yea, That's Basically It</h3>
+          <h3 class="para-title">And Yea, This Is A Charcuterie Video</h3>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-PNDmXXbWWQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
             deserunt soluta quae aliquid corporis nostrum, vero cum accusantium
@@ -77,22 +86,25 @@
                 type="text"
                 placeholder="Name"
                 id="name"
+                class="form-input"
                 name="user_name"
               />
               <input
                 type="email"
                 placeholder="Email"
                 id="mail"
+                class="form-input"
                 name="user_email"
               />
               <textarea
                 id="msg"
+                class="form-input"
                 placeholder="Message"
                 name="user_message"
                 cols="40"
                 rows="10"
               ></textarea>
-              <button class="send-message">Send Message</button>
+              <button class="send-message" type="submit">Send Message</button>
             </form>
             <div class="footer-paragraph footer-col2">
               <p>
@@ -125,5 +137,6 @@
         </footer>
       </main>
     </div>
+    <script src="/script/script.js"></script>
   </body>
 </html>
